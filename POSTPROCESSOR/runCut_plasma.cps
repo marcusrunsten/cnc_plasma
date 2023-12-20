@@ -29,12 +29,12 @@ allowedCircularPlanes = 1 << PLANE_XY; // only XY
 
 // user-defined properties
 properties = {
-  writeMachine: true, // write machine
-  showSequenceNumbers: false, // show sequence numbers
-  sequenceNumberStart: 10, // first sequence number
-  sequenceNumberIncrement: 1, // increment for sequence numbers
-  separateWordsWithSpace: true, // specifies that the words should be separated with a white space
-  writeDetails: true // write details
+  writeMachine: true, 
+  showSequenceNumbers: false, 
+  sequenceNumberStart: 10, 
+  sequenceNumberIncrement: 1, 
+  separateWordsWithSpace: true, 
+  writeDetails: true 
 };
 
 var gFormat = createFormat({prefix:"G", decimals:0});
@@ -43,7 +43,7 @@ var feedFormat = createFormat({decimals:0});
 
 var xyzFormat = createFormat({decimals:(unit == MM ? 3 : 4), forceDecimal:false});
 var abcFormat = createFormat({decimals:3, forceDecimal:true, scale:DEG});
-var secFormat = createFormat({decimals:3, forceDecimal:true}); // seconds - range 0.001-1000
+var secFormat = createFormat({decimals:3, forceDecimal:true}); 
 
 var xOutput = createVariable({prefix:"X"}, xyzFormat);
 var yOutput = createVariable({prefix:"Y"}, xyzFormat);
@@ -58,9 +58,9 @@ var iOutput = createReferenceVariable({prefix:"I", force:true}, xyzFormat);
 var jOutput = createReferenceVariable({prefix:"J", force:true}, xyzFormat);
 var kOutput = createReferenceVariable({prefix:"K", force:true}, xyzFormat);
 
-var gMotionModal = createModal({force:true}, gFormat); // modal group 1 // G0-G3, ...
-var gAbsIncModal = createModal({}, gFormat); // modal group 3 // G90-91
-var gUnitModal = createModal({}, gFormat); // modal group 6 // G20-22
+var gMotionModal = createModal({force:true}, gFormat); 
+var gAbsIncModal = createModal({}, gFormat); 
+var gUnitModal = createModal({}, gFormat); 
 
 // collected state
 var sequenceNumber;
@@ -105,7 +105,7 @@ function onOpen() {
   
 // Write model and post details
 if (properties.writeDetails) {
-    writeComment("Mach3 CNC Plasma");
+    writeComment("runCutter CNC Plasma");
  
     if (hasGlobalParameter("generated-by")) {
         var value = getGlobalParameter("generated-by");
@@ -243,7 +243,7 @@ function getWorkPlaneMachineABC(workPlane) {
 
   var tcp = false;
   if (tcp) {
-    setRotation(W); // TCP mode
+    setRotation(W); 
   } else {
     var O = machineConfiguration.getOrientation(abc);
     var R = machineConfiguration.getRemainingOrientation(abc, W);
