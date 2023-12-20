@@ -8,3 +8,10 @@ I'm using a SKR controller for a 3D printer to run the stepper motors and a Rasp
 I've configured klipper to trick the software into running the scrape start for the plasma on each start and I've written a custom POST processor for Fusion360 to export the gcode to the cutter.
 
 I'll supply the STEP file for the hardware and the POST processor now and I'll add the customization for the klipper software later on.
+
+**TODO::**
+
+Bill of materials
+-----------------
+
+To be added
