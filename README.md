@@ -54,7 +54,7 @@ The benefit of using touch instead of HF start is that it's less prone to causin
 I've installed a straight plasma torch on my cutter which is nice but not necessary. To use the standard torch a new holder needs to be designed though.<br>
 I've cut the trigger feed to the torch and installed a connector to route it to the relay instead of the trigger on the torch. The relay is controlled by a digital output pin on the SKR control board to start and stop the plasma.
 
-**TODO::**
+**TODO::**<br>
 Check the size of the magnets on the torch holder<br>
 Count M5 bolts and lengths<br>
 Count M5 t-slot nuts<br>
