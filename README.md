@@ -9,8 +9,6 @@ I've configured klipper to trick the software into running the scrape start for 
 
 I'll supply the STEP file for the hardware and the POST processor now and I'll add the customization for the klipper software later on.
 
-**TODO::**
-
 Bill of materials
 -----------------
 
@@ -53,3 +51,11 @@ Bill of materials
 The requirements of the plasma cutter depends on what material you want to cut. I'm using a Cut60 with a maximum power of 60A and touch start. The benefit of using touch instead of HF start is that it's less prone to causing problems with the electronics due to RF noise. Still I have some problems of the controller getting brown-outs at more than 42A power which I'm sure can be remedied with shielding and better cable routing but so far I have managed to cut what I've needed as it is.
 I've installed a straight plasma torch on my cutter which is nice but not necessary. To use the standard torch a new holder needs to be designed though.
 I've cut the trigger feed to the torch and installed a connector to route it to the relay instead of the trigger on the torch. The relay is controlled by a digital output pin on the SKR control board to start and stop the plasma.
+
+**TODO::**
+Check the size of the magnets on the torch holder
+Count M5 bolts and lengths
+Count M5 t-slot nuts
+Get the details of the micro switch for the z-limit
+Measure the length of the Z extrusion
+Rip the config from klipper and post here
