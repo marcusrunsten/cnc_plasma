@@ -61,4 +61,3 @@ Count M5 bolts and lengths<br>
 Count M5 t-slot nuts<br>
 Get the details of the micro switch for the z-limit<br>
 Measure the length of the Z extrusion<br>
-Rip the config from klipper and post he<br>
